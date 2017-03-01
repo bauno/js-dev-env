@@ -1,3 +1,5 @@
+require ('babel-register')()
+
 // import {expect} from 'chai'
 // import fs from 'fs'
 // import jsdom from 'jsdom'
@@ -5,6 +7,7 @@
 const expect = require('chai').expect
 const fs = require('fs')
 const jsdom = require('jsdom')
+
 
 
 describe('Our first test', () => {

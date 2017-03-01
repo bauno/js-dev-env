@@ -1,6 +1,4 @@
 import {getUsers,deleteUser} from './api/userApi'
-// const importedFunctions =
-
 
 getUsers().then(result => {
   let usersBody = ""
