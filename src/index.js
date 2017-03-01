@@ -17,9 +17,9 @@ getUsers().then(result => {
 
   global.document.getElementById('users').innerHTML = usersBody
 
-  const deleteLinks = global.document.getElementByClassName("deleteUser")
+  const deleteLinks = global.document.getElementsByClassName("deleteUser")
   Array.from(deleteLinks, link => {
-    link.onClick = function(event) {
+    link.onclick = function(event) {
       const element = event.target
       event.preventDefault()
       deleteUser(element.attributes["data-id"].value)
